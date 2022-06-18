@@ -1,9 +1,26 @@
 <h1>Welcome, this is the home page</h1>  
   
-<button type="button" 
-        class="btn btn-lg btn-danger" 
-        data-bs-toggle="popover" 
-        title="Popover title" 
-        data-bs-content="Amazing content, right ?">
-        Click to toggle popover
-</button>  
+<h5>所蔵一覧</h5>
+<div>
+        <table class="table">
+        <thead>
+        <tr>
+        <th scope=“col”>タイトル</th>
+        <th scope=“col”>著者名</th>
+        <th scope=“col”>出版社</th>
+        <th scope=“col”>出版日</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr class="table-light">
+        <% @books.each do |book|%>
+        <td ><%= book.book_title %></td>
+        <td><%= book.author_name %></td>
+        <td><%= book.publisher %></td>
+        <td><%= book.publication_year %></td>
+        </tr>
+        <% end %>
+        </tbody>
+        </table>
+</div>
