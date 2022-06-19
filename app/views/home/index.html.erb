@@ -1,26 +1,24 @@
-<h1>Welcome, this is the home page</h1>  
-  
-<h5>所蔵一覧</h5>
-<div>
-        <table class="table">
-        <thead>
-        <tr>
-        <th scope=“col”>タイトル</th>
-        <th scope=“col”>著者名</th>
-        <th scope=“col”>出版社</th>
-        <th scope=“col”>出版日</th>
-        </tr>
-        </thead>
+<h1>所蔵一覧</h1>  
+<div class="px-5">
+	<table class="table table-striped">
+	<thead>
+	<tr>
+	<th scope=“col”>タイトル</th>
+	<th scope=“col”>著者名</th>
+	<th scope=“col”>出版社</th>
+	<th scope=“col”>出版日</th>
+	</tr>
+	</thead>
 
-        <tbody>
-        <tr class="table-light">
-        <% @books.each do |book|%>
-        <td ><%= book.book_title %></td>
-        <td><%= book.author_name %></td>
-        <td><%= book.publisher %></td>
-        <td><%= book.publication_year %></td>
-        </tr>
-        <% end %>
-        </tbody>
-        </table>
+	<tbody>
+	<tr>
+	<% @books.each do |book|%>
+	<td ><%= book.book_title %></td>
+	<td><%= book.author_name %></td>
+	<td><%= book.publisher %></td>
+	<td><%= book.publication_year %></td>
+	</tr>
+	<% end %>
+	</tbody>
+	</table>
 </div>
