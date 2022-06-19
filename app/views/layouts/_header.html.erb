@@ -1,6 +1,9 @@
   <header class="top-page">
     <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
-        <div class="container"> <a class="navbar-brand" href="#">ABC図書館</a>
+        <div class="container"> 
+        <%= link_to root_path do %>
+            <p class="navbar-brand">ABC図書館</p>
+        <% end %>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar" aria-controls="Navbar" aria-expanded="false" aria-label="ナビゲーションの切替"> <span class="navbar-toggler-icon"></span> </button>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto py-3 py-lg-0 mt-3 mt-lg-0">
