@@ -5,3 +5,16 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+# BOOKダミーデータ投入
+# 20.times do |n|
+#   Book.create!(
+#     book_title: Faker::Book.unique.title,
+#     author_name: Faker::Book.unique.author,
+#     publisher: Faker::Book.unique.publisher,
+#     publication_year: "2020-11-01",
+#     bibliographic_id: "00000001",
+#     isbn_id:"1234567891234",
+#     price:"2000",
+#   )
+# end
