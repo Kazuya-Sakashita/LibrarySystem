@@ -1,2 +1,39 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+
+<div class="px-5">
+<h1>所蔵詳細</h1>
+    <table class="table">
+    <thead>
+        <tr>
+        <th scope="col">項目</th>
+        <th scope="col">内容</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+                <td><label for="bookTitle">タイトル</label></td>
+                <td><%= @book.book_title %></td>
+            </tr>
+            <tr>
+                <td><label for="bookPublisher">出版社</label></td>
+                <td><%= @book.publisher %></td>
+            </tr>
+                <tr>
+                <td><label for="bookPublicationYear">出版日</label></td>
+                <td><%= @book.publication_year %></td>
+            </tr>
+                <tr>
+                <td><label for="bookTitle">書籍コード</label></td>
+                <td> <%= @book.bibliographic_id %></td>
+            </tr>
+                <tr>
+                <td><label for="bookTitle">ISBNコード</label></td>
+                <td><%= @book.isbn_id %></td>
+            </tr>
+            <tr>
+                <td><label for="bookTitle">価格</label></td>
+                <td><%= @book.price %>円</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
